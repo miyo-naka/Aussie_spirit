@@ -12,10 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
-    fontFamily: {
-      hurricane: "Hurricane",
-      sanserif: "sans-serif",
+      fontFamily: {
+        hurricane: ["Hurricane", "serif"],
+      },
     },
   },
   plugins: [],
