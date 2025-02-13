@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Header() {
   return (
     <header className="flex items-center justify-between h-12 leading-12 bg-amber-900 sticky top-0">
@@ -7,16 +9,16 @@ export function Header() {
       <nav>
         <ul className="flex items-center space-x-6 mr-6 text-white">
           <li>
-            <a href="./australia.html">Aussie Life</a>
+            <Link href="/australia">Aussie Life</Link>
           </li>
           <li>
-            <a href="">English</a>
+            <Link href="/english">English</Link>
           </li>
           <li>
-            <a href="">Parenting</a>
+            <Link href="/parenting">Parenting</Link>
           </li>
           <li>
-            <a href="">About us</a>
+            <Link href="/about">About us</Link>
           </li>
         </ul>
       </nav>
