@@ -13,6 +13,10 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      hurricane: "Hurricane",
+      sanserif: "sans-serif",
+    },
   },
   plugins: [],
 } satisfies Config;
