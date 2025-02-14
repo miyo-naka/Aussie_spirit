@@ -2,16 +2,17 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between h-12 leading-12 bg-amber-900 sticky top-0">
-      <div className="ml-2.5 text-3xl text-white no-underline">
-        <p>
-          <Link href="/" className="font-hurricane">
-            Aussie Spirit
-          </Link>
-        </p>
+    <header className="text-center sticky top-0">
+      <div className="bg-amber-50 ">
+        <Link
+          href="/"
+          className="text-8xl/tight no-underline mt-16 font-hurricane font-bold"
+        >
+          Aussie Spirit
+        </Link>
       </div>
-      <nav>
-        <ul className="flex items-center space-x-6 mr-6 text-white">
+      <nav className="bg-amber-900 h-12">
+        <ul className="w-full flex justify-center item-center space-x-6  text-white p-2.5">
           <li>
             <Link href="/AussieLife">Aussie Life</Link>
           </li>
