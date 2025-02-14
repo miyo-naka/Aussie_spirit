@@ -5,15 +5,15 @@ import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-  const posts = await getBlogsByCategory("AussieLife");
+  const posts = await getBlogsByCategory("English");
   return posts.map((post) => ({ slug: post.slug }));
 }
 
 type Params = Promise<{ slug: string }>;
 
-export default async function AussieLifePost({ params }: { params: Params }) {
+export default async function EnglishPost({ params }: { params: Params }) {
   const { slug } = await params;
-  const posts = await getBlogsByCategory("AussieLife");
+  const posts = await getBlogsByCategory("English");
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -29,7 +29,7 @@ export default async function AussieLifePost({ params }: { params: Params }) {
           <p className="text-l">{post.frontmatter.date}</p>
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
-        <Link href="/AussieLife" className="text-blue-500">
+        <Link href="/English" className="text-blue-500">
           戻る
         </Link>
       </div>
