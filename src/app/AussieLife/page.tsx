@@ -1,7 +1,7 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
 import getAllBlogs from "@/utils/getAllBlogs";
-import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 export default async function AussieLife() {
   const posts = await getAllBlogs();
@@ -10,12 +10,14 @@ export default async function AussieLife() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow">
-        <p>Aussie Life</p>
-        {posts.map((post, index) => (
-          <div key={index}>
-            <h2>{post.frontmatter.title}</h2>
+        <h1 className="text-2xl">Aussie Life</h1>
+        {posts.map((post) => (
+          <div key={post.slug}>
+            <h2 className="text-xl">{post.frontmatter.title}</h2>
             <p>{post.frontmatter.date}</p>
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <Link href={`/AussieLife/${post.slug}`} className="text-blue-500">
+              続きを読む
+            </Link>
           </div>
         ))}
       </div>
