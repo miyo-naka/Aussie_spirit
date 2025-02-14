@@ -9,11 +9,13 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export default async function AussieLifePost({
-  params,
-}: {
-  params: { slug: string };
-}) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function AussieLifePost({ params }: PageProps) {
   const posts = await getAllBlogs();
   const post = posts.find((p) => p.slug === params.slug);
 
