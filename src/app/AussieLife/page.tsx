@@ -1,10 +1,10 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
-import getAllBlogs from "@/utils/getAllBlogs";
+import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import Link from "next/link";
 
 export default async function AussieLife() {
-  const posts = await getAllBlogs();
+  const posts = await getBlogsByCategory("AussieLife");
 
   return (
     <div className="flex flex-col min-h-screen">

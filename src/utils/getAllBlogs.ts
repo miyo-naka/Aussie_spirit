@@ -13,10 +13,15 @@ async function getAllBlogs() {
     return {
       frontmatter: data,
       slug: filename.replace(".md", ""),
+      category: Array.isArray(data.category) ? data.category : [data.category], // 配列に変換
+      tags: data.tags || [],
       content,
     };
   });
   return posts;
 }
 
-export default getAllBlogs;
+export async function getBlogsByCategory(category: string) {
+  const posts = await getAllBlogs();
+  return posts.filter((post) => post.category.includes(category)); // 配列内にカテゴリがあるかチェック
+}
