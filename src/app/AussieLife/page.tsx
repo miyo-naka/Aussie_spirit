@@ -1,13 +1,25 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
-import { Main } from "@/components/Main/page";
+import getAllBlogs from "@/utils/getAllBlogs";
+import Link from "next/link";
 
-export default function AussieLife() {
+export default async function AussieLife() {
+  const posts = await getAllBlogs();
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow">
-        <p>Aussie Life</p>
+        <h1 className="text-2xl">Aussie Life</h1>
+        {posts.map((post) => (
+          <div key={post.slug}>
+            <h2 className="text-xl">{post.frontmatter.title}</h2>
+            <p>{post.frontmatter.date}</p>
+            <Link href={`/AussieLife/${post.slug}`} className="text-blue-500">
+              続きを読む
+            </Link>
+          </div>
+        ))}
       </div>
       <Footer />
     </div>
