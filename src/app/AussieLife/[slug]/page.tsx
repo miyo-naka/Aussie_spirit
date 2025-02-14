@@ -9,15 +9,12 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
+type Params = Promise<{ slug: string }>;
 
-export default async function AussieLifePost({ params }: PageProps) {
+export default async function AussieLifePost({ params }: { params: Params }) {
+  const { slug } = await params;
   const posts = await getAllBlogs();
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     return <p>記事が見つかりませんでした。</p>;
