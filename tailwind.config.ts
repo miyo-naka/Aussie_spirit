@@ -15,7 +15,6 @@ export default {
       fontFamily: {
         hurricane: ["Hurricane", "serif"],
         notoSerif: ["Noto Serif JP", "serif"],
-        muellerhoff: ["Herr Von Muellerhoff", "serif"],
       },
     },
   },
