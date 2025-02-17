@@ -1,8 +1,9 @@
 ---
 title: "英語を上達させる方法"
 date: "2024-02-05"
-category: ["English"]
+category: "English"
 tags: ["英語学習", "リスニング"]
+imgUrl: "sydney.JPG"
 ---
 
 英語を上達させるには...

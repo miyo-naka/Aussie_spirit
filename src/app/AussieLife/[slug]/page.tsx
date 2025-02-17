@@ -3,6 +3,7 @@ import { Header } from "@/components/Header/page";
 import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { Headline } from "@/components/Headline/page";
 
 export async function generateStaticParams() {
   const posts = await getBlogsByCategory("AussieLife");
@@ -23,14 +24,11 @@ export default async function AussieLifePost({ params }: { params: Params }) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow">
-        <div className="text-center m-4">
-          <h1 className="text-2xl">Aussie Life</h1>
-          <p>AussieLifeヘッドライン</p>
-        </div>
-        <div>
+      <div className="flex-grow mx-10">
+        <Headline category="AussieLife" comment="AussieLife Headline" />
+        <div className="border p-4">
           <h2 className="text-2xl">{post.frontmatter.title}</h2>
-          <p className="text-l">{post.frontmatter.date}</p>
+          <p className="text-l mb-4">{post.frontmatter.date}</p>
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
         <Link href="/AussieLife" className="text-blue-500">

@@ -15,6 +15,7 @@ async function getAllBlogs() {
       slug: filename.replace(".md", ""),
       category: Array.isArray(data.category) ? data.category : [data.category], // 配列に変換
       tags: data.tags || [],
+      imgUrl: data.imgUrl,
       content,
     };
   });

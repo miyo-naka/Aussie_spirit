@@ -14,7 +14,11 @@ export default {
       },
       fontFamily: {
         hurricane: ["Hurricane", "serif"],
-        notoSerif: ["Noto Serif JP", "serif"],
+        // notoSerif: ["Noto Serif JP", "serif"],
+        sawarabi: ["Sawarabi Gothic", "serif"],
+      },
+      gridTemplateColumns: {
+        "auto-fill-280": "repeat(auto-fill, minmax(280px, 1fr))",
       },
     },
   },
