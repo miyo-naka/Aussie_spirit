@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export function Header() {
+  const categories = ["AussieLife", "English", "Parenting"];
+
   return (
     <header className="text-center sticky top-0">
       <div className="bg-amber-50 ">
@@ -16,15 +18,11 @@ export function Header() {
           <li>
             <Link href="/">Home</Link>
           </li>
-          <li>
-            <Link href="/AussieLife">Aussie Life</Link>
-          </li>
-          <li>
-            <Link href="/English">English</Link>
-          </li>
-          <li>
-            <Link href="/Parenting">Parenting</Link>
-          </li>
+          {categories.map((category) => (
+            <li key={category}>
+              <Link href={`/${category}`}>{category}</Link>
+            </li>
+          ))}
           <li>
             <Link href="/About">About us</Link>
           </li>
