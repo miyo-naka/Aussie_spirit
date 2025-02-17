@@ -7,19 +7,15 @@ import { Headline } from "@/components/Headline/page";
 
 export async function generateStaticParams() {
   const posts = await getBlogsByCategory("English");
-  console.log("Generated Params:", posts);
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-type Params = { slug: string };
+type Params = Promise<{ slug: string }>;
 
 export default async function EnglishPost({ params }: { params: Params }) {
   const { slug } = await params;
-  console.log("Received slug:", slug);
   const posts = await getBlogsByCategory("English");
-  console.log("Posts:", posts);
   const post = posts.find((p) => p.slug === slug);
-  console.log("Found Post:", post);
 
   if (!post) {
     return <p>記事が見つかりませんでした。</p>;
