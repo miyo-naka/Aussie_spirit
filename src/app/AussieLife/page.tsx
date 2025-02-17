@@ -14,12 +14,18 @@ export default async function AussieLife() {
         <Headline category="AussieLife" comment="AussieLife Headline" />
         <div className="mx-10 flex flex-wrap gap-6">
           {posts.map((post) => (
-            <div key={post.slug} className="border p-4 w-[30%]">
-              <h2 className="text-xl">{post.frontmatter.title}</h2>
-              <p>{post.frontmatter.date}</p>
-              <Link href={`/AussieLife/${post.slug}`} className="text-blue-500">
-                続きを読む
-              </Link>
+            <div key={post.slug} className="border w-[30%]">
+              <img src={`/img/${post.frontmatter.imgUrl}`} />
+              <div className="p-4">
+                <h2 className="text-xl">{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.date}</p>
+                <Link
+                  href={`/AussieLife/${post.slug}`}
+                  className="text-blue-500"
+                >
+                  続きを読む
+                </Link>
+              </div>
             </div>
           ))}
         </div>

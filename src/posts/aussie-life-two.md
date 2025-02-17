@@ -3,6 +3,7 @@ title: "オーストラリア生活その２"
 date: "2024-02-14"
 category: "AussieLife"
 tags: ["移住", "オーストラリア"]
+imgUrl: "beach.JPG"
 ---
 
 オーストラリアでの生活を始めるためのガイドです。
