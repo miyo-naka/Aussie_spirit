@@ -3,7 +3,7 @@ title: "オーストラリア生活の始め方"
 date: "2024-02-13"
 category: "AussieLife"
 tags: ["移住", "オーストラリア"]
-imgUrl: "sydney.JPG"
+imgUrl: "australia-62823_1280.jpg"
 ---
 
 オーストラリアでの生活を始めるためのガイドです。

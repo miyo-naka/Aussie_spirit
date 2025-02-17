@@ -17,6 +17,9 @@ export default {
         // notoSerif: ["Noto Serif JP", "serif"],
         sawarabi: ["Sawarabi Gothic", "serif"],
       },
+      gridTemplateColumns: {
+        "auto-fill-280": "repeat(auto-fill, minmax(280px, 1fr))",
+      },
     },
   },
   plugins: [],
