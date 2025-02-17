@@ -12,7 +12,10 @@ export function Header() {
         </Link>
       </div>
       <nav className="bg-amber-900 h-12">
-        <ul className="w-full flex justify-center item-center space-x-6  text-white p-2.5">
+        <ul className="w-full flex justify-center item-center space-x-8  text-white p-2.5">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
           <li>
             <Link href="/AussieLife">Aussie Life</Link>
           </li>

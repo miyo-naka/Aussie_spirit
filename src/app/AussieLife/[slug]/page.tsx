@@ -24,6 +24,10 @@ export default async function AussieLifePost({ params }: { params: Params }) {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow">
+        <div className="text-center m-4">
+          <h1 className="text-2xl">Aussie Life</h1>
+          <p>AussieLifeヘッドライン</p>
+        </div>
         <div>
           <h2 className="text-2xl">{post.frontmatter.title}</h2>
           <p className="text-l">{post.frontmatter.date}</p>
