@@ -9,7 +9,7 @@ export function AboutUs() {
             alt=""
             className="w-16 h-16 object-cover rounded-[50%]"
           />
-          <p>Yosuke</p>
+          <p>Yo-</p>
         </div>
         <div className="p-5 text-center">
           <img
@@ -17,7 +17,7 @@ export function AboutUs() {
             alt=""
             className="w-16 h-16 object-cover rounded-[50%]"
           />
-          <p>Miyoko</p>
+          <p>Marumi</p>
         </div>
       </div>
     </div>
