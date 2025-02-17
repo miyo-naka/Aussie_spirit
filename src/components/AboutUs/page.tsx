@@ -1,6 +1,6 @@
 export function AboutUs() {
   return (
-    <div className="m-10 text-center">
+    <div className="m-10 text-center flex-grow">
       <h2 className="font-semibold">About us</h2>
       <div className="flex justify-center">
         <div className="p-5 text-center">
