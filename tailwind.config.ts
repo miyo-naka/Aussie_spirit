@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         hurricane: ["Hurricane", "serif"],
-        notoSerif: ["Noto Serif JP", "serif"],
+        // notoSerif: ["Noto Serif JP", "serif"],
+        sawarabi: ["Sawarabi Gothic", "serif"],
       },
     },
   },

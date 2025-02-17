@@ -3,18 +3,23 @@ import { Header } from "@/components/Header/page";
 import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { Headline } from "@/components/Headline/page";
 
 export async function generateStaticParams() {
   const posts = await getBlogsByCategory("English");
+  console.log("Generated Params:", posts);
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-type Params = Promise<{ slug: string }>;
+type Params = { slug: string };
 
 export default async function EnglishPost({ params }: { params: Params }) {
   const { slug } = await params;
+  console.log("Received slug:", slug);
   const posts = await getBlogsByCategory("English");
+  console.log("Posts:", posts);
   const post = posts.find((p) => p.slug === slug);
+  console.log("Found Post:", post);
 
   if (!post) {
     return <p>記事が見つかりませんでした。</p>;
@@ -23,8 +28,9 @@ export default async function EnglishPost({ params }: { params: Params }) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow">
-        <div>
+      <div className="flex-grow mx-10">
+        <Headline category="English" comment="English Headline" />
+        <div className="border p-4">
           <h2 className="text-2xl">{post.frontmatter.title}</h2>
           <p className="text-l">{post.frontmatter.date}</p>
           <ReactMarkdown>{post.content}</ReactMarkdown>

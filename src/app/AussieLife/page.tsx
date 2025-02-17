@@ -12,7 +12,7 @@ export default async function AussieLife() {
       <Header />
       <div className="flex-grow">
         <Headline category="AussieLife" comment="AussieLife Headline" />
-        <div className="mx-10 flex justify-center flex-wrap gap-6">
+        <div className="mx-10 flex flex-wrap gap-6">
           {posts.map((post) => (
             <div key={post.slug} className="border p-4 w-[30%]">
               <h2 className="text-xl">{post.frontmatter.title}</h2>
