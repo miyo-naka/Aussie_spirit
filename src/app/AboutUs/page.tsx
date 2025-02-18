@@ -25,8 +25,8 @@ export default function AboutUs() {
               className="inline w-[150px] h-[150px] object-cover rounded-[50%]"
             />
             <h2 className="font-semibold my-4">Marumi</h2>
-            <p className="text-sm">
-              コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+            <p className="text-sm text-left">
+              オーストラリア９年目に突入。2児の母。英語はなんとなくでここまで来ました。それでも試行錯誤しながら何とか生きています。温泉大好き日本食大好き、でもオーストラリアの自然も大好きです。絶賛プログラミングを学習中！
             </p>
           </div>
         </div>

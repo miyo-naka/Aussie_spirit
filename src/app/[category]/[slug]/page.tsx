@@ -2,6 +2,7 @@ import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
 import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import { Headline } from "@/components/Headline/page";
 import { notFound } from "next/navigation";
@@ -12,9 +13,9 @@ type CategoryPageProps = {
 
 // 許可するカテゴリ
 const categoryData: Record<string, string> = {
-  AussieLife: "AussieLife Headline",
-  English: "English Headline",
-  Parenting: "Parenting Headline",
+  AussieLife: "日々の暮らしの中でのちょっとした発見や不思議なこと",
+  English: "英語学習でつまづいたこと、気になるオージー英語",
+  Parenting: "子どもたちの成長を見守る中での発見などなど",
 };
 
 // すべてのカテゴリの記事のスラグを取得
@@ -49,14 +50,22 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow mx-10">
+      <div className="flex-grow max-w-[60vw] mx-auto">
         <Headline category={category} comment={categoryData[category]} />
         <div className="p-2">
-          <img src={`/img/${post.frontmatter.imgUrl}`} className="max-h-60" />
+          <img
+            src={`/img/${post.frontmatter.imgUrl}`}
+            className="max-h-60 mx-auto"
+          />
           <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
           <p className="text-l mb-4">{post.frontmatter.date}</p>
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-          <Link href={`/${category}`} className="text-blue-500">
+          <ReactMarkdown remarkPlugins={[remarkGfm]} className="prose">
+            {post.content}
+          </ReactMarkdown>
+          <Link
+            href={`/${category}`}
+            className="inline-block text-blue-500 mt-4"
+          >
             戻る
           </Link>
         </div>

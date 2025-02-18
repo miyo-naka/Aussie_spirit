@@ -11,9 +11,9 @@ interface CategoryPageProps {
 
 // 許可するカテゴリ
 const categoryData: Record<string, string> = {
-  AussieLife: "AussieLife Headline",
-  English: "English Headline",
-  Parenting: "Parenting Headline",
+  AussieLife: "日々の暮らしの中でのちょっとした発見や不思議なこと",
+  English: "英語学習でつまづいたこと、気になるオージー英語",
+  Parenting: "子どもたちの成長を見守る中での発見などなど",
 };
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
