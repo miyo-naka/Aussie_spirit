@@ -50,7 +50,7 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow max-w-[60vw] mx-auto">
+      <div className="flex-grow max-w-[90vw] md:max-w-[60vw] mx-auto">
         <Headline category={category} comment={categoryData[category]} />
         <div className="p-2">
           <img
