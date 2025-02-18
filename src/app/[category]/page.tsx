@@ -6,7 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface CategoryPageProps {
-  params: { category: string };
+  params: Promise<{ category: string }>;
 }
 
 // 許可するカテゴリ
@@ -17,7 +17,7 @@ const categoryData: Record<string, string> = {
 };
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = params;
+  const { category } = await params;
 
   // 許可されていないカテゴリなら 404
   if (!categoryData[category]) {

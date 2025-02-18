@@ -7,7 +7,7 @@ import { Headline } from "@/components/Headline/page";
 import { notFound } from "next/navigation";
 
 type CategoryPageProps = {
-  params: { category: string; slug: string };
+  params: Promise<{ category: string; slug: string }>;
 };
 
 // 許可するカテゴリ
@@ -35,7 +35,7 @@ export async function generateStaticParams() {
 }
 
 export default async function CategoryPagePost({ params }: CategoryPageProps) {
-  const { category, slug } = params;
+  const { category, slug } = await params;
   if (!categoryData[category]) {
     return notFound();
   }
