@@ -9,7 +9,7 @@ export function Header() {
       <div className="bg-amber-50 ">
         <Link
           href="/"
-          className="text-8xl/tight no-underline mt-16 font-hurricane font-bold"
+          className="text-4xl/tight md:text-8xl/tight no-underline mt-16 font-hurricane font-bold"
         >
           Aussie Spirit
         </Link>

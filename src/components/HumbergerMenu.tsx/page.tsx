@@ -8,15 +8,15 @@ export function HumbergerMenu() {
   const categories = ["AussieLife", "English", "Parenting"];
 
   return (
-    <div className="md:hidden bg-amber-900 h-12">
+    <div className="md:hidden bg-amber-900 h-8">
       {/* ハンバーガーアイコン */}
       <button
-        className="flex flex-col space-y-2 p-3"
+        className="flex flex-col space-y-1 p-2"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="block w-8 h-0.5 bg-white transition-transform duration-300"></span>
-        <span className="block w-8 h-0.5 bg-white transition-transform duration-300"></span>
-        <span className="block w-8 h-0.5 bg-white transition-transform duration-300"></span>
+        <span className="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+        <span className="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+        <span className="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
       </button>
 
       {/* ドロワーメニュー（スライドイン） */}
