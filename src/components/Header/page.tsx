@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HumbergerMenu } from "../HumbergerMenu.tsx/page";
 
 export function Header() {
   const categories = ["AussieLife", "English", "Parenting"];
@@ -12,9 +13,10 @@ export function Header() {
         >
           Aussie Spirit
         </Link>
+        <HumbergerMenu />
       </div>
 
-      <nav className="bg-amber-900 h-12">
+      <nav className="hidden md:block bg-amber-900 h-12">
         <ul className="w-full flex justify-center space-x-10 text-white p-3">
           <li>
             <Link
