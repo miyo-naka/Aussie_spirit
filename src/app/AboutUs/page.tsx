@@ -6,8 +6,8 @@ export default function AboutUs() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="m-10 text-center flex-grow">
-        <div className="flex justify-center">
-          <div className="p-5 text-center max-w-[40%]">
+        <div className="flex flex-col md:flex-row justify-center">
+          <div className="p-5 text-center w-full md:max-w-[40%]">
             <img
               src="./img/sydney.JPG"
               alt=""
@@ -18,7 +18,7 @@ export default function AboutUs() {
               コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
             </p>
           </div>
-          <div className="p-5 text-center max-w-[40%]">
+          <div className="p-5 text-center w-full md:max-w-[40%]">
             <img
               src="./img/stone.JPG"
               alt=""
