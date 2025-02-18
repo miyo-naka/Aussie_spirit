@@ -43,7 +43,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 <p className="text-sm mb-2">{post.frontmatter.date}</p>
                 <Link
                   href={`/${category}/${post.slug}`}
-                  className="text-sm text-blue-500"
+                  className="text-sm text-gray-500 hover:text-blue-500"
                 >
                   続きを読む
                 </Link>

@@ -2,8 +2,8 @@ import { CategoryCards } from "@/components/CategoryCards/page";
 
 export function Main() {
   return (
-    <main className="flex-grow">
-      <div className="mt-10 flex justify-center gap-4">
+    <main className="flex-grow flex flex-col items-center mt-12">
+      <div className="w-11/12 max-w-6xl grid grid-cols-auto-fill-280 gap-10">
         <CategoryCards
           category="AussieLife"
           imgSrc="/beach2.JPG"
