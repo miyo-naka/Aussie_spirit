@@ -51,14 +51,15 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
       <Header />
       <div className="flex-grow mx-10">
         <Headline category={category} comment={categoryData[category]} />
-        <div className="border p-4">
-          <h2 className="text-2xl">{post.frontmatter.title}</h2>
+        <div className="p-2">
+          <img src={`/img/${post.frontmatter.imgUrl}`} className="max-h-60" />
+          <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
           <p className="text-l mb-4">{post.frontmatter.date}</p>
           <ReactMarkdown>{post.content}</ReactMarkdown>
+          <Link href={`/${category}`} className="text-blue-500">
+            戻る
+          </Link>
         </div>
-        <Link href={`/${category}`} className="text-blue-500">
-          戻る
-        </Link>
       </div>
       <Footer />
     </div>
