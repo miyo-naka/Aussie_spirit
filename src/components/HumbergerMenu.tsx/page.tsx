@@ -48,7 +48,7 @@ export function HumbergerMenu() {
               </li>
             ))}
             <li>
-              <Link href="/About" onClick={() => setIsOpen(false)}>
+              <Link href="/AboutUs" onClick={() => setIsOpen(false)}>
                 About us
               </Link>
             </li>
