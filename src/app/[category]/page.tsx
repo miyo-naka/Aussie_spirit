@@ -33,13 +33,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <Headline category={category} comment={categoryData[category]} />
         <div className="mx-10 mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
-            <div key={post.slug} className="border">
+            <div key={post.slug} className="border flex sm:block">
               <img
                 src={`/img/${post.frontmatter.imgUrl}`}
-                className="max-h-50"
+                className="w-1/2 sm:w-full max-h-50"
               />
               <div className="p-4">
-                <h2 className="text-l font-bold ">{post.frontmatter.title}</h2>
+                <h2 className="text-sm sm:text-lg font-bold ">
+                  {post.frontmatter.title}
+                </h2>
                 <p className="text-sm mb-2">{post.frontmatter.date}</p>
                 <Link
                   href={`/${category}/${post.slug}`}

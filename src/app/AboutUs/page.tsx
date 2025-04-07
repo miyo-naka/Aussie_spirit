@@ -13,9 +13,9 @@ export default function AboutUs() {
               alt=""
               className="inline w-[150px] h-[150px] object-cover rounded-[50%]"
             />
-            <h2 className="font-semibold my-4">Roger</h2>
+            <h2 className="font-semibold my-4">Shari</h2>
             <p className="text-sm">
-              コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+              オーストラリア大好きお父さん。機械系エンジニアやってます。オーストラリア移住を夢見て足掛け１０年。念願のオーストラリアで子育て満喫中！
             </p>
           </div>
           <div className="p-5 text-center w-full md:max-w-[40%]">
