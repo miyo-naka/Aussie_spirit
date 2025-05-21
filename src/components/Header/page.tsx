@@ -6,7 +6,7 @@ export function Header() {
 
   return (
     <header className="text-center sticky top-0 z-50 shadow-md">
-      <div className="bg-amber-50 ">
+      <div className="bg-[#A6C3B9] ">
         <Link
           href="/"
           className="text-6xl/tight md:text-8xl/tight no-underline my-10 font-hurricane font-bold"
@@ -16,7 +16,8 @@ export function Header() {
         <HumbergerMenu />
       </div>
 
-      <nav className="hidden md:block bg-amber-900 h-12">
+      {/* ナビゲーションメニュー */}
+      <nav className="hidden md:block bg-[#2C5D47] h-12">
         <ul className="w-full flex justify-center space-x-10 text-white p-3">
           <li>
             <Link

@@ -23,3 +23,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, "Sawarabi Gothic", "Noto Serif JP", sans-serif;
 }
+
+/* 配色テーマ：Mint & Teal */
+/* const themeMintTeal = {
+  background: 'bg-[#EAF1EB]',
+  headerText: 'text-[#2C5D47]',
+  navBg: 'bg-[#A6C3B9]',
+  navText: 'text-white',
+  footerBg: 'bg-[#2C5D47]',
+  footerText: 'text-white',
+  cardBg: 'bg-white',
+  buttonBg: 'bg-[#4A7B67]',
+  buttonText: 'text-white'
+}; */
