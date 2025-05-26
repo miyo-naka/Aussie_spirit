@@ -8,7 +8,7 @@ export function HumbergerMenu() {
   const categories = ["AussieLife", "English", "Parenting"];
 
   return (
-    <div className="md:hidden bg-amber-900 h-8">
+    <div className="md:hidden bg-[#2C5D47] h-8">
       {/* ハンバーガーアイコン */}
       <button
         className="flex flex-col space-y-1 p-2"
