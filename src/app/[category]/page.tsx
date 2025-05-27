@@ -5,9 +5,9 @@ import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-interface CategoryPageProps {
+type CategoryPageProps = {
   params: Promise<{ category: string }>;
-}
+};
 
 // 許可するカテゴリ
 const categoryData: Record<string, string> = {
@@ -31,7 +31,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <Header />
       <div className="flex-grow">
         <Headline category={category} comment={categoryData[category]} />
-        <div className="mx-10 mb-10 grid grid-cols-auto-fill-280 gap-6">
+        <div className="mx-4 sm:mx-10  mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
             <div key={post.slug} className="border flex sm:block">
               <img
@@ -43,6 +43,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   {post.frontmatter.title}
                 </h2>
                 <p className="text-sm mb-2">{post.frontmatter.date}</p>
+                <p className="text-sm text-gray-700 mb-2">
+                  {post.frontmatter.excerpt}
+                </p>
                 <Link
                   href={`/${category}/${post.slug}`}
                   className="text-sm text-gray-500 hover:text-blue-500"
