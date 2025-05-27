@@ -62,7 +62,7 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
 
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            className="prose lg:prose-lg max-w-none prose-blue dark:prose-invert"
+            className="prose lg:prose-lg max-w-none prose-blue"
           >
             {post.content}
           </ReactMarkdown>
