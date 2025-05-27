@@ -55,11 +55,15 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
         <div className="p-2">
           <img
             src={`/img/${post.frontmatter.imgUrl}`}
-            className="max-h-60 mx-auto"
+            className="max-h-60 mx-auto rounded-sm"
           />
           <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
           <p className="text-l mb-4">{post.frontmatter.date}</p>
-          <ReactMarkdown remarkPlugins={[remarkGfm]} className="prose">
+
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            className="prose lg:prose-lg max-w-none prose-blue dark:prose-invert"
+          >
             {post.content}
           </ReactMarkdown>
           <Link
