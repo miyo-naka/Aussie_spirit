@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aussie-spirit.vercel.app/
+
+# Sitemaps
+Sitemap: https://aussie-spirit.vercel.app/sitemap.xml
