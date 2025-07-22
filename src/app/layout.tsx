@@ -12,8 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
 
 export const metadata: Metadata = {
   title: "Aussie Spirit",
