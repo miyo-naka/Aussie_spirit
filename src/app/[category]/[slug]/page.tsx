@@ -51,11 +51,11 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow max-w-[90vw] md:max-w-[60vw] mx-auto">
-        <Headline category={category} comment={categoryData[category]} />
-        <div className="p-2">
+        {/* <Headline category={category} comment={categoryData[category]} /> */}
+        <div className="p-2 mt-4">
           <img
             src={`/img/${post.frontmatter.imgUrl}`}
-            className="max-h-60 mx-auto rounded-sm"
+            className="max-h-60 mx-auto rounded-sm rounded-lg"
           />
           <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
           <p className="text-l mb-4">{post.frontmatter.date}</p>
