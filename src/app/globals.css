@@ -21,7 +21,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, "Sawarabi Gothic", "Noto Serif JP", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body :lang(ja) {
+  font-family: "Sawarabi Gothic", "Noto Serif JP", Arial, Helvetica, sans-serif;
 }
 
 /* 配色テーマ：Mint & Teal */

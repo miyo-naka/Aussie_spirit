@@ -6,16 +6,10 @@ import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import { Headline } from "@/components/Headline/page";
 import { notFound } from "next/navigation";
+import { categoryData } from "@/const/categoryData";
 
 type CategoryPageProps = {
   params: Promise<{ category: string; slug: string }>;
-};
-
-// 許可するカテゴリ
-const categoryData: Record<string, string> = {
-  AussieLife: "日々の暮らしの中でのちょっとした発見や不思議なこと",
-  English: "英語学習でつまづいたこと、気になるオージー英語",
-  Parenting: "子どもたちの成長を見守る中での発見などなど",
 };
 
 // すべてのカテゴリの記事のスラグを取得
