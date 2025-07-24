@@ -1,19 +1,13 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
 import { Headline } from "@/components/Headline/page";
+import { categoryData } from "@/const/categoryData";
 import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type CategoryPageProps = {
   params: Promise<{ category: string }>;
-};
-
-// 許可するカテゴリ
-const categoryData: Record<string, string> = {
-  AussieLife: "日々の暮らしの中でのちょっとした発見や不思議なこと",
-  English: "英語学習でつまづいたこと、気になるオージー英語",
-  Parenting: "子どもたちの成長を見守る中での発見などなど",
 };
 
 export default async function CategoryPage({ params }: CategoryPageProps) {

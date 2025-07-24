@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Aussie Spirit",
     images: [
       {
-        url: "/img/toppage.png",
+        url: "/img/toppage.JPG",
         width: 1200,
         height: 630,
         alt: "Aussie Spirit OGP Image",

@@ -1,9 +1,9 @@
 ---
 title: "オーストラリアの子育て事情"
 date: "2024-02-10"
-category: ["AussieLife", "Parenting"]
+category: ["AussieLife", "Family"]
 tags: ["移住", "子育て", "オーストラリア"]
-imgUrl: "オーストラリアイメージ.png"
+imgUrl: "dairy.JPG"
 excerpt: "オーストラリアでの子育てについて、日本との違いや、教育システムについてもご紹介します。"
 ---
 

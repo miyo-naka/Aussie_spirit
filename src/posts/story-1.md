@@ -1,7 +1,7 @@
 ---
 title: "はじめに"
 date: "2025-05-26"
-category: "AussieLife"
+category: "Story"
 tags: ["移住", "オーストラリア"]
 imgUrl: "beach.JPG"
 excerpt: "オーストラリア移住に至った経緯や、これから発信していきたい思いについて綴っています。"
