@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { HumbergerMenu } from "../HumbergerMenu.tsx/page";
+import { HumbergerMenu } from "../HumbergerMenu/page";
+import { categories } from "@/const/category";
 
 export function Header() {
-  const categories = ["AussieLife", "English", "Parenting"];
-
   return (
     <header className="text-center sticky top-0 z-50 shadow-md">
       <div className="bg-[#A6C3B9] ">

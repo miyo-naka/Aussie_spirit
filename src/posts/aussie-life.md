@@ -1,7 +1,7 @@
 ---
 title: "私の英語学習の歴史"
 date: "2025-05-26"
-category: "English"
+category: "AussieLife"
 tags: ["英語学習", "リスニング"]
 imgUrl: "sydney.JPG"
 excerpt: "英語苦手な私が英語の勉強を始め、オーストラリアに住むに至るまでの英語学習の歴史を勝手に振り返ります。"
