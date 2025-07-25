@@ -48,7 +48,7 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
         {/* <Headline category={category} comment={categoryData[category]} /> */}
         <div className="p-2 mt-4">
           <img
-            src={`/img/${post.frontmatter.imgUrl}`}
+            src={`/blog/${post.frontmatter.imgUrl}`}
             className="max-h-60 mx-auto rounded-sm rounded-lg"
           />
           <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
