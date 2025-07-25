@@ -19,7 +19,7 @@ export function Main() {
         />
         <CategoryCards
           category="AussieLife"
-          imgSrc="/beach2.JPG"
+          imgSrc="/bluemountains.JPG"
           comment="日本人一家のオーストラリアでの日常"
         />
       </div>
