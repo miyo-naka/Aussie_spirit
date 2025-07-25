@@ -62,9 +62,9 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
           </ReactMarkdown>
           <Link
             href={`/${category}`}
-            className="inline-block text-blue-500 mt-4"
+            className="inline-block text-blue-500 mt-8 hover:text-blue-700"
           >
-            戻る
+            一覧に戻る
           </Link>
         </div>
       </div>

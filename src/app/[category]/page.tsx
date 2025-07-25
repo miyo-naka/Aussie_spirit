@@ -28,25 +28,24 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="mx-4 sm:mx-10  mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
             <div key={post.slug} className="border flex sm:block">
-              <img
-                src={`/blog/${post.frontmatter.imgUrl}`}
-                className="w-1/2 sm:w-full max-h-50 rounded-xl"
-              />
-              <div className="p-4">
-                <h2 className="text-sm sm:text-lg font-bold ">
-                  {post.frontmatter.title}
-                </h2>
-                <p className="text-sm mb-2">{post.frontmatter.date}</p>
-                <p className="text-sm text-gray-700 mb-2">
-                  {post.frontmatter.excerpt}
-                </p>
-                <Link
-                  href={`/${category}/${post.slug}`}
-                  className="text-sm text-gray-500 hover:text-blue-500"
-                >
-                  続きを読む
-                </Link>
-              </div>
+              <Link href={`/${category}/${post.slug}`}>
+                <img
+                  src={`/blog/${post.frontmatter.imgUrl}`}
+                  className="w-1/2 sm:w-full max-h-50 rounded-xl"
+                />
+                <div className="p-4">
+                  <h2 className="text-sm sm:text-lg font-bold ">
+                    {post.frontmatter.title}
+                  </h2>
+                  <p className="text-sm mb-2">{post.frontmatter.date}</p>
+                  <p className="text-sm text-gray-700 mb-2">
+                    {post.frontmatter.excerpt}
+                  </p>
+                  <p className="text-sm text-gray-500 hover:text-blue-700 pt-2">
+                    続きを読む
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

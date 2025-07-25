@@ -1,11 +1,11 @@
 "use client";
 
+import { categories } from "@/const/category";
 import Link from "next/link";
 import { useState } from "react";
 
 export function HumbergerMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  const categories = ["AussieLife", "English", "Parenting"];
 
   return (
     <div className="md:hidden bg-[#2C5D47] h-8">
