@@ -29,7 +29,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           {posts.map((post) => (
             <div key={post.slug} className="border flex sm:block">
               <img
-                src={`/img/${post.frontmatter.imgUrl}`}
+                src={`/blog/${post.frontmatter.imgUrl}`}
                 className="w-1/2 sm:w-full max-h-50 rounded-xl"
               />
               <div className="p-4">
