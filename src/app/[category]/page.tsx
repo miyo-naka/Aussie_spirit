@@ -25,15 +25,18 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <Header />
       <div className="flex-grow">
         <Headline category={category} comment={categoryData[category]} />
-        <div className="mx-4 sm:mx-10  mb-10 grid grid-cols-auto-fill-280 gap-6">
+        <div className="mx-2 sm:mx-10 mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
-            <div key={post.slug} className="border flex sm:block">
-              <Link href={`/${category}/${post.slug}`}>
+            <div key={post.slug}>
+              <Link
+                href={`/${category}/${post.slug}`}
+                className="w-full flex flex-row sm:flex-col"
+              >
                 <img
                   src={`/blog/${post.frontmatter.imgUrl}`}
-                  className="w-1/2 sm:w-full max-h-50 rounded-xl"
+                  className="w-1/2 sm:w-full h-48 object-cover rounded-xl"
                 />
-                <div className="p-4">
+                <div className="w-1/2 sm:w-full p-4">
                   <h2 className="text-sm sm:text-lg font-bold ">
                     {post.frontmatter.title}
                   </h2>

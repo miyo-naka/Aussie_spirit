@@ -47,13 +47,16 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
       <div className="flex-grow max-w-[90vw] md:max-w-[60vw] mx-auto">
         {/* <Headline category={category} comment={categoryData[category]} /> */}
         <div className="p-2 mt-4">
-          <img
-            src={`/blog/${post.frontmatter.imgUrl}`}
-            className="max-h-60 mx-auto rounded-sm rounded-lg"
-          />
-          <h2 className="text-2xl mt-4">{post.frontmatter.title}</h2>
-          <p className="text-l mb-4">{post.frontmatter.date}</p>
-
+          <div className="my-4 md:mb-10 ">
+            <img
+              src={`/blog/${post.frontmatter.imgUrl}`}
+              className="max-h-60 mx-auto rounded-lg"
+            />
+            <h2 className="text-2xl pt-4 text-center font-bold">
+              {post.frontmatter.title}
+            </h2>
+            <p className="text-l text-right">{post.frontmatter.date}</p>
+          </div>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             className="prose lg:prose-lg max-w-none prose-blue"
@@ -62,7 +65,7 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
           </ReactMarkdown>
           <Link
             href={`/${category}`}
-            className="inline-block text-blue-500 mt-8 hover:text-blue-700"
+            className="inline-block text-blue-500 my-8 hover:text-blue-700"
           >
             一覧に戻る
           </Link>
