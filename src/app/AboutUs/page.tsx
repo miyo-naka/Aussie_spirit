@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm/page";
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
 
@@ -29,6 +30,12 @@ export default function AboutUs() {
               オーストラリア９年目に突入。2児の母。英語はなんとなくでここまで来ました。それでも試行錯誤しながら何とか生きています。温泉大好き日本食大好き、でもオーストラリアの自然も大好きです。絶賛プログラミングを学習中！
             </p>
           </div>
+        </div>
+
+        <div className="mt-8 md:mt-16">
+          <section>
+            <ContactForm />
+          </section>
         </div>
       </div>
       <Footer />

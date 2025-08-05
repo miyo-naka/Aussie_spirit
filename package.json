@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspark/use-formspark": "^0.1.42",
     "@tailwindcss/typography": "^0.5.16",
     "framer-motion": "^12.12.1",
     "gray-matter": "^4.0.3",
