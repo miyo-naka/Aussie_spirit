@@ -4,7 +4,6 @@ import { getBlogsByCategory } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
-import { Headline } from "@/components/Headline/page";
 import { notFound } from "next/navigation";
 import { categoryData } from "@/const/categoryData";
 
