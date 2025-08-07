@@ -26,7 +26,23 @@ export function Header() {
               Home
             </Link>
           </li>
-          {categories.map((category) => (
+          <li>
+            <Link
+              href="/"
+              className="hover:text-yellow-400 transition duration-200"
+            >
+              Story
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              className="hover:text-yellow-400 transition duration-200"
+            >
+              Blog
+            </Link>
+          </li>
+          {/* {categories.map((category) => (
             <li key={category}>
               <Link
                 href={`/${category}`}
@@ -35,7 +51,7 @@ export function Header() {
                 {category}
               </Link>
             </li>
-          ))}
+          ))} */}
           <li>
             <Link
               href="/AboutUs"

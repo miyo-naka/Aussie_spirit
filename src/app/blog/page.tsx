@@ -1,35 +1,30 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
-import { Headline } from "@/components/Headline/page";
-import { categoryData } from "@/const/categoryData";
-import { getBlogsByCategory } from "@/utils/getAllBlogs";
+import { getAllBlogs } from "@/utils/getAllBlogs";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 
 type CategoryPageProps = {
   params: Promise<{ category: string }>;
 };
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = await params;
+export default async function BlogPage({ params }: CategoryPageProps) {
+  // const { category } = await params;
+  // if (!categoryData[category]) {
+  //   return notFound();
+  // }
 
-  // 許可されていないカテゴリなら 404
-  if (!categoryData[category]) {
-    return notFound();
-  }
-
-  const posts = await getBlogsByCategory(category);
+  const posts = await getAllBlogs();
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-grow">
-        <Headline category={category} comment={categoryData[category]} />
+      <div className="flex-grow mt-8">
+        {/* <Headline category={category} comment={categoryData[category]} /> */}
         <div className="mx-2 sm:mx-10 mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
             <div key={post.slug}>
               <Link
-                href={`/${category}/${post.slug}`}
+                href={`/blog/${post.slug}`}
                 className="w-full flex flex-row sm:flex-col"
               >
                 <img

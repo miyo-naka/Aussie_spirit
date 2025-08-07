@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-async function getAllBlogs() {
+export async function getAllBlogs() {
   const postsDirectory = path.join(process.cwd(), "/src/posts");
   const files = fs.readdirSync(postsDirectory);
 
@@ -37,7 +37,7 @@ async function getAllBlogs() {
   return posts;
 }
 
-export async function getBlogsByCategory(category: string) {
-  const posts = await getAllBlogs();
-  return posts.filter((post) => post.frontmatter.category.includes(category));
-}
+// export async function getBlogsByCategory(category: string) {
+//   const posts = await getAllBlogs();
+//   return posts.filter((post) => post.frontmatter.category.includes(category));
+// }

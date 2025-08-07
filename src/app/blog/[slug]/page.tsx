@@ -1,43 +1,30 @@
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
-import { getBlogsByCategory } from "@/utils/getAllBlogs";
+import { getAllBlogs } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { categoryData } from "@/const/categoryData";
 
-type CategoryPageProps = {
-  params: Promise<{ category: string; slug: string }>;
+type BlogPageProps = {
+  params: { slug: string };
 };
 
-// すべてのカテゴリの記事のスラグを取得
+// 静的パス生成
 export async function generateStaticParams() {
-  const categories = Object.keys(categoryData);
-  let paths: { category: string; slug: string }[] = [];
-
-  for (const category of categories) {
-    const posts = await getBlogsByCategory(category);
-    const categoryPaths = posts.map((post) => ({
-      category,
-      slug: post.slug,
-    }));
-    paths = [...paths, ...categoryPaths];
-  }
-
-  return paths;
+  const posts = await getAllBlogs();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-export default async function CategoryPagePost({ params }: CategoryPageProps) {
-  const { category, slug } = await params;
-  if (!categoryData[category]) {
-    return notFound();
-  }
-
-  const posts = await getBlogsByCategory(category);
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { slug } = params;
+  const posts = await getAllBlogs();
   const post = posts.find((p) => p.slug === slug);
+
   if (!post) {
-    return <p>記事が見つかりませんでした。</p>;
+    return notFound();
   }
 
   return (
@@ -70,7 +57,7 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
             {post.content}
           </ReactMarkdown>
           <Link
-            href={`/${category}`}
+            href="/blog"
             className="inline-block text-blue-500 my-8 hover:text-blue-700"
           >
             一覧に戻る
