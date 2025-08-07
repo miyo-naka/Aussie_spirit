@@ -59,6 +59,13 @@ export default async function CategoryPagePost({ params }: CategoryPageProps) {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             className="prose lg:prose-lg max-w-none prose-blue"
+            components={{
+              a: ({ href, children }) => (
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  {children}
+                </a>
+              ),
+            }}
           >
             {post.content}
           </ReactMarkdown>
