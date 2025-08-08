@@ -1,6 +1,6 @@
-import ContactForm from "@/components/ContactForm/page";
-import { Footer } from "@/components/Footer/page";
-import { Header } from "@/components/Header/page";
+import ContactForm from "@/components/contactForm";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
 export default function AboutUs() {
   return (

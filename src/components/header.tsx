@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HumbergerMenu } from "../HumbergerMenu/page";
+import { HumbergerMenu } from "./humbergerMenu";
 
 export function Header() {
   return (

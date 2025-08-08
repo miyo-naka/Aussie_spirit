@@ -23,17 +23,17 @@ export function TimelineCard({ year, title, image, link }: TimelineCardProps) {
       <div className="flex flex-col items-center">
         <h3 className="text-xl font-bold">{year}</h3>
         <p className="mb-2">{title}</p>
-        <div className="w-full flex">
+        <div className="w-full flex flex-col md:flex-row">
           <img
             src={image}
             alt={title}
-            className="rounded-lg w-1/2  aspect-[4/3] object-cover"
+            className="rounded-lg w-full md:w-3/5  aspect-[4/3] object-cover"
           />
-          <ul className="space-y-2 m-4 text-gray-700">
+          <ul className="space-y-2 m-4 text-sm text-gray-700">
             {link.map((linkItem) => (
               <li key={linkItem.link}>
                 <Link href={linkItem.link} className="hover:text-indigo-600">
-                  ・{linkItem.title}
+                  ➡{linkItem.title}
                 </Link>
               </li>
             ))}

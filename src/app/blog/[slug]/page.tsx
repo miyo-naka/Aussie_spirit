@@ -1,5 +1,5 @@
-import { Footer } from "@/components/Footer/page";
-import { Header } from "@/components/Header/page";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { getAllBlogs } from "@/utils/getAllBlogs";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";

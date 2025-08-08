@@ -1,7 +1,7 @@
 export const timeline = [
   {
     year: "2011",
-    title: "渡豪準備中",
+    title: "渡豪までの準備",
     image: "/img/flag.JPG",
     link: [
       {
@@ -12,12 +12,12 @@ export const timeline = [
   },
   {
     year: "2017",
-    title: "オーストラリア移住",
-    image: "/img/dairy.JPG",
+    title: "ついにオーストラリア移住",
+    image: "/img/sydney.JPG",
     link: [
       {
         title: "準備中",
-        link: "/blog/2017/1",
+        link: "/story",
       },
     ],
   },
@@ -28,7 +28,7 @@ export const timeline = [
     link: [
       {
         title: "準備中",
-        link: "/blog/2019/1",
+        link: "/story",
       },
     ],
   },
@@ -39,7 +39,7 @@ export const timeline = [
     link: [
       {
         title: "準備中",
-        link: "/blog/2025/1",
+        link: "/story",
       },
     ],
   },
