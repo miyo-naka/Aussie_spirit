@@ -3,12 +3,13 @@
 ## オーストラリア関連ブログ
 
 ＜トップページ＞<br>
-<img src="https://github.com/user-attachments/assets/0daac376-c667-491b-98e0-0b791a65a1fd" width=60%><br><br>
-
+<img width=60% alt="toppage" src="https://github.com/user-attachments/assets/c535b38c-acde-4413-ab4a-de53caddfbb3" /><br><br>
+＜記事一覧ページ＞<br>
+<img width=60% alt="blogpage" src="https://github.com/user-attachments/assets/ac869312-a4d7-4bb2-98ca-06b81c8e9724" />
 
 ## URL
 
-- 本番環境：https://aussie-spirit.vercel.app/
+- 本番環境：https://aussie-spirit.com/
 - 開発環境：http://localhost:3000
   <br><br>
 
