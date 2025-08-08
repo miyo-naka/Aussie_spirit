@@ -4,35 +4,9 @@ import BackgroundPath from "@/components/BackgroundPath/page";
 import { Footer } from "@/components/Footer/page";
 import { Header } from "@/components/Header/page";
 import { TimelineCard } from "@/components/TimelineCards/page";
+import { timeline } from "@/const/timelineCards";
 
 export default function TimelinePage() {
-  const timeline = [
-    {
-      year: "2011",
-      title: "渡豪準備中",
-      image: "/img/flag.JPG",
-      link: "/posts/2016",
-    },
-    {
-      year: "2017",
-      title: "オーストラリア移住",
-      image: "/img/dairy.JPG",
-      link: "/posts/2018",
-    },
-    {
-      year: "2019 2022",
-      title: "子供たち誕生",
-      image: "/img/stone.JPG",
-      link: "/posts/2022",
-    },
-    {
-      year: "2025",
-      title: "現在の暮らし",
-      image: "/img/beach3.jpg",
-      link: "/posts/2025",
-    },
-  ];
-
   return (
     <main className="flex flex-col w-full h-full">
       <Header />

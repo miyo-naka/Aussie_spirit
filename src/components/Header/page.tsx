@@ -27,7 +27,7 @@ export function Header() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/story"
               className="hover:text-yellow-400 transition duration-200"
             >
               Story

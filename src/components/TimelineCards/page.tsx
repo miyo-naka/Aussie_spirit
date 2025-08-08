@@ -5,36 +5,41 @@ type TimelineCardProps = {
   year: string;
   title: string;
   image: string;
-  link: string;
-  direction?: "left" | "right";
+  link: {
+    title: string;
+    link: string;
+  }[];
 };
 
-export function TimelineCard({
-  year,
-  title,
-  image,
-  link,
-  direction,
-}: TimelineCardProps) {
+export function TimelineCard({ year, title, image, link }: TimelineCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: direction === "left" ? -50 : 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="bg-white rounded-xl shadow-lg p-4 w-[300px] hover:shadow-xl transition-shadow duration-300"
+      transition={{ duration: 1 }}
+      className="bg-white rounded-xl shadow-lg p-4 w-[450px] hover:shadow-xl transition-shadow duration-300"
     >
-      <Link href={link}>
-        <div className="flex flex-col items-center">
-          <h3 className="text-xl font-bold">{year}</h3>
-          <p className="mb-2">{title}</p>
+      <div className="flex flex-col items-center">
+        <h3 className="text-xl font-bold">{year}</h3>
+        <p className="mb-2">{title}</p>
+        <div className="w-full flex">
           <img
             src={image}
             alt={title}
-            className="rounded-lg w-full aspect-[4/3] object-cover"
+            className="rounded-lg w-1/2  aspect-[4/3] object-cover"
           />
+          <ul className="space-y-2 m-4 text-gray-700">
+            {link.map((linkItem) => (
+              <li key={linkItem.link}>
+                <Link href={linkItem.link} className="hover:text-indigo-600">
+                  ・{linkItem.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </Link>
+      </div>
     </motion.div>
   );
 }
