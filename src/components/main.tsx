@@ -12,10 +12,13 @@ export function Main() {
           className="absolute top-0 left-0 w-full h-full object-cover transform scale-[1.2] skew-x-6"
           alt="Story"
         />
-        <div className="absolute left-[10%] inset-0 flex items-center justify-center">
+        <div className="absolute md:left-[10%] inset-0 flex flex-col items-center justify-center">
           <h2 className="text-white text-3xl md:text-4xl font-bold transform skew-x-6">
             Story
           </h2>
+          <p className="mt-4 text-white text-sm md:text-base transform skew-x-6">
+            オーストラリア移住を決意してから今日に至るまでの軌跡
+          </p>
         </div>
       </Link>
 
@@ -28,10 +31,13 @@ export function Main() {
           className="absolute top-0 left-0 w-full h-full object-cover transform scale-[1.2] skew-x-6"
           alt="Blog"
         />
-        <div className="absolute left-[-10%] inset-0 flex items-center justify-center">
+        <div className="absolute md:left-[-10%] inset-0 flex flex-col items-center justify-center">
           <h2 className="text-white text-3xl md:text-4xl font-bold transform skew-x-6">
             Blog
           </h2>
+          <p className="mt-4 text-white text-sm md:text-base transform skew-x-6">
+            日本人一家のオーストラリアでの日常を綴ったブログ
+          </p>
         </div>
       </Link>
 
