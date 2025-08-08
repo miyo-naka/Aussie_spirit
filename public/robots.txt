@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aussie-spirit.vercel.app/
+Host: https://aussie-spirit.com/
 
 # Sitemaps
-Sitemap: https://aussie-spirit.vercel.app/sitemap.xml
+Sitemap: https://aussie-spirit.com/sitemap.xml

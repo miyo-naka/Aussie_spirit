@@ -6,20 +6,20 @@ import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-type BlogPageProps = {
-  params: { slug: string };
+type Params = {
+  slug: string;
 };
 
 // 静的パス生成
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<Params[]> {
   const posts = await getAllBlogs();
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export default async function BlogPage({ params }: BlogPageProps) {
-  const { slug } = params;
+export default async function BlogPage(props: { params: Promise<Params> }) {
+  const { slug } = await props.params;
   const posts = await getAllBlogs();
   const post = posts.find((p) => p.slug === slug);
 
