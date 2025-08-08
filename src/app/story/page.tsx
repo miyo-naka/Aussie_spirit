@@ -13,7 +13,7 @@ export default function TimelinePage() {
 
       <div className="flex flex-col items-center justify-center w-full h-full">
         <BackgroundPath />
-        <div className="relative md:w-[60%] flex flex-col gap-12 py-12">
+        <div className="relative w-full md:w-[60%] flex flex-col gap-12 py-12 px-4">
           {timeline.map((item, idx) => (
             <div
               key={idx}
