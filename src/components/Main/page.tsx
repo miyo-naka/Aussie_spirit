@@ -1,14 +1,46 @@
-import { CategoryCards } from "@/components/CategoryCards/page";
+import Link from "next/link";
 
 export function Main() {
   return (
-    <main className="flex-grow flex flex-col items-center mt-4">
-      <p className="px-2 mb-8 text-center text-gray-700">
+    <main className="h-full flex flex-col md:flex-row mx-[-10%] items-stretch ">
+      <Link
+        href="/story"
+        className="relative w-full h-full overflow-hidden transform group opacity-60 -skew-x-6 hover:opacity-80 transition-transform duration-700"
+      >
+        <img
+          src="/img/beach2.JPG"
+          className="absolute top-0 left-0 w-full h-full object-cover transform scale-[1.2] skew-x-6"
+          alt="Story"
+        />
+        <div className="absolute left-[10%] inset-0 flex items-center justify-center">
+          <h2 className="text-white text-3xl md:text-4xl font-bold transform skew-x-6">
+            Story
+          </h2>
+        </div>
+      </Link>
+
+      <Link
+        href="/blog"
+        className="relative w-full h-full overflow-hidden opacity-60 -skew-x-6 transform group hover:opacity-80 transition-transform duration-700"
+      >
+        <img
+          src="/img/tree.JPG"
+          className="absolute top-0 left-0 w-full h-full object-cover transform scale-[1.2] skew-x-6"
+          alt="Blog"
+        />
+        <div className="absolute left-[-10%] inset-0 flex items-center justify-center">
+          <h2 className="text-white text-3xl md:text-4xl font-bold transform skew-x-6">
+            Blog
+          </h2>
+        </div>
+      </Link>
+
+      {/* <p className="px-2 mb-8 text-center text-gray-700">
         オーストラリア在住の日本人夫婦による試行錯誤の記録
-      </p>
+      </p> */}
 
       {/* コンテンツカード表示部分 */}
-      <div className="w-11/12 max-w-6xl grid grid-cols-auto-fill-280 gap-10">
+      {/* <div className="w-11/12 max-w-6xl grid grid-cols-auto-fill-280 gap-10">
         <CategoryCards
           category="Story"
           imgSrc="/beach2.JPG"
@@ -24,7 +56,7 @@ export function Main() {
           imgSrc="/bluemountains.JPG"
           comment="日本人一家のオーストラリアでの日常"
         />
-      </div>
+      </div> */}
     </main>
   );
 }

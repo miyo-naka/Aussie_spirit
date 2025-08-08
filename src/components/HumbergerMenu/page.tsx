@@ -1,6 +1,5 @@
 "use client";
 
-import { categories } from "@/const/category";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -40,13 +39,29 @@ export function HumbergerMenu() {
                 Home
               </Link>
             </li>
-            {categories.map((category) => (
+            <li>
+              <Link
+                href="/story"
+                className="hover:text-yellow-400 transition duration-200"
+              >
+                Story
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className="hover:text-yellow-400 transition duration-200"
+              >
+                Blog
+              </Link>
+            </li>
+            {/* {categories.map((category) => (
               <li key={category}>
                 <Link href={`/${category}`} onClick={() => setIsOpen(false)}>
                   {category}
                 </Link>
               </li>
-            ))}
+            ))} */}
             <li>
               <Link href="/AboutUs" onClick={() => setIsOpen(false)}>
                 About us

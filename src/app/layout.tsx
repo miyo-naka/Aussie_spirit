@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://aussie-spirit.vercel.app/",
+    canonical: "https://aussie-spirit.com/",
   },
 };
 
