@@ -1,9 +1,9 @@
 "use client";
 
-import BackgroundPath from "@/components/BackgroundPath/page";
-import { Footer } from "@/components/Footer/page";
-import { Header } from "@/components/Header/page";
-import { TimelineCard } from "@/components/TimelineCards/page";
+import BackgroundPath from "@/components/backgroundPath";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import { TimelineCard } from "@/components/timelineCards";
 import { timeline } from "@/const/timelineCards";
 
 export default function TimelinePage() {
@@ -13,7 +13,7 @@ export default function TimelinePage() {
 
       <div className="flex flex-col items-center justify-center w-full h-full">
         <BackgroundPath />
-        <div className="relative w-[60%] flex flex-col gap-12 py-12">
+        <div className="relative md:w-[60%] flex flex-col gap-12 py-12">
           {timeline.map((item, idx) => (
             <div
               key={idx}

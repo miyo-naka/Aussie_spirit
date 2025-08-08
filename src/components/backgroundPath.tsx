@@ -26,7 +26,7 @@ export default function BackgroundPath() {
     C600,${svgHeight * 0.7} 840,${svgHeight * 0.8} 720,${svgHeight * 0.9}
     C600,${svgHeight * 1.0} 840,${svgHeight * 1.1} 720,${svgHeight * 1.2}`}
         fill="none"
-        stroke="#A7D49B"
+        stroke="#A6C3B9"
         strokeWidth="120"
         strokeLinecap="round"
       />
