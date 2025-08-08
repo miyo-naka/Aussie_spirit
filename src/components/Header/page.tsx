@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { HumbergerMenu } from "../HumbergerMenu/page";
-import { categories } from "@/const/category";
 
 export function Header() {
   return (

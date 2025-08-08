@@ -1,12 +1,10 @@
-import { CategoryCards } from "@/components/CategoryCards/page";
-import Image from "next/image";
 import Link from "next/link";
 
 export function Main() {
   return (
     <main className="h-full flex flex-col md:flex-row mx-[-10%] items-stretch ">
       <Link
-        href="/"
+        href="/story"
         className="relative w-full h-full overflow-hidden transform group opacity-60 -skew-x-6 hover:opacity-80 transition-transform duration-700"
       >
         <img

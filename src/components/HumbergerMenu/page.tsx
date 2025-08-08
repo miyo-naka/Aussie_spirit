@@ -1,6 +1,5 @@
 "use client";
 
-import { categories } from "@/const/category";
 import Link from "next/link";
 import { useState } from "react";
 
