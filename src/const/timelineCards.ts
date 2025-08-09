@@ -6,7 +6,11 @@ export const timeline = [
     link: [
       {
         title: "オーストラリア移住への原点",
-        link: "/blog/2011_1",
+        link: "/blog/1_1",
+      },
+      {
+        title: "心に刻まれる都市、シドニー",
+        link: "/blog/1_3",
       },
     ],
   },
