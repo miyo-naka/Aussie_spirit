@@ -17,8 +17,8 @@ export default function TimelinePage() {
           {timeline.map((item, idx) => (
             <div
               key={idx}
-              className={`w-full flex justify-${
-                idx % 2 === 0 ? "start" : "end"
+              className={`w-full flex justify-center ${
+                idx % 2 === 0 ? "md:justify-start" : "md:justify-end"
               }`}
             >
               <TimelineCard {...item} />
