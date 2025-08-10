@@ -1,6 +1,7 @@
 import ContactForm from "@/components/contactForm";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -32,6 +33,28 @@ export default function AboutUs() {
           </div>
         </div>
 
+        <div className="bg-white p-6 my-4 rounded-lg shadow-md max-w-xl mx-auto text-gray-800 text-left text-sm">
+          <Link href="/blog/20250526_atfirst">
+            <div className="w-full flex flex-col md:flex-row">
+              <img
+                src="blog/20250526_atfirst/beach.JPG"
+                alt="Atfirst"
+                className="rounded-lg w-full md:w-1/2  aspect-[4/3] object-cover"
+              />
+              <div className="md:ml-4 mt-4 md:mt-0 flex flex-col gap-2">
+                <h3 className="mb-2">➡ Aussie Spiritの紹介はこちらから</h3>
+                <p className="font-bold">はじめに</p>
+                <p>
+                  オーストラリア生活ブログ「Aussie Spirit」へようこそ。
+                  <br />
+                  私たち自身の自己紹介と、ブログサイト開設に至った思い。
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        {/* Contact form */}
         <div className="mt-8 md:mt-16">
           <section>
             <ContactForm />
