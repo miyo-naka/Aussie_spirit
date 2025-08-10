@@ -21,8 +21,8 @@ export function TimelineCard({ year, title, image, link }: TimelineCardProps) {
       className="bg-white rounded-xl shadow-lg p-4 w-[90%] md:w-[450px] hover:shadow-xl transition-shadow duration-300"
     >
       <div className="flex flex-col items-center">
-        <h3 className="text-xl font-bold">{year}</h3>
-        <p className="mb-2">{title}</p>
+        {/* <h3 className="text-xl font-bold">{year}</h3> */}
+        <h3 className="mb-2">{title}</h3>
         <div className="w-full flex flex-col md:flex-row">
           <img
             src={image}
