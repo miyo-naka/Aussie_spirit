@@ -15,7 +15,7 @@ export function Header() {
       </div>
 
       {/* ナビゲーションメニュー */}
-      <nav className="hidden md:block bg-[#2C5D47] h-12">
+      <nav className="flex hidden md:block bg-[#2C5D47] h-12">
         <ul className="w-full flex justify-center space-x-10 text-white p-3">
           <li>
             <Link
@@ -57,6 +57,15 @@ export function Header() {
               className="hover:text-yellow-400 transition duration-200"
             >
               About us
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/blog/20250526_atfirst"
+              className="absolute right-8 pt-1 text-xs hover:text-yellow-400 transition duration-200 rounded-full bg-[#A6C3B9] px-3 py-1"
+            >
+              はじめての方はこちら
             </Link>
           </li>
         </ul>

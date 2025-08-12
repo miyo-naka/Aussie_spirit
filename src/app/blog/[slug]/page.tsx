@@ -60,7 +60,7 @@ export default async function BlogPage(props: { params: Promise<Params> }) {
             href="/blog"
             className="inline-block text-blue-500 my-8 hover:text-blue-700"
           >
-            一覧に戻る
+            記事一覧に戻る
           </Link>
         </div>
       </div>
