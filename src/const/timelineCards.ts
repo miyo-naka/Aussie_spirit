@@ -9,8 +9,12 @@ export const timeline = [
         link: "/blog/1_1",
       },
       {
+        title: "海外旅行デビューと、まだ見ぬオーストラリア",
+        link: "/blog/1_2",
+      },
+      {
         title: "心に刻まれる都市、シドニー",
-        link: "/blog/1_3",
+        link: "/blog/1_4",
       },
     ],
   },

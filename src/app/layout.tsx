@@ -25,7 +25,8 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Aussie Spirit",
-    description: "オーストラリア生活やWeb開発の記録ブログ",
+    description:
+      "日本人一家のオーストラリア生活やそこに至るまでの記録を綴ったブログ",
     url: siteUrl,
     siteName: "Aussie Spirit",
     images: [
@@ -38,6 +39,12 @@ export const metadata: Metadata = {
     ],
     locale: "ja_JP",
     type: "website",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
   },
 
   robots: {
