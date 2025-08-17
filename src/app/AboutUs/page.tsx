@@ -37,7 +37,7 @@ export default function AboutUs() {
           <Link href="/blog/20250526_atfirst">
             <div className="w-full flex flex-col md:flex-row">
               <img
-                src="blog/20250526_atfirst/beach.JPG"
+                src="blog/20250526_atfirst/atfirst.png"
                 alt="Atfirst"
                 className="rounded-lg w-full md:w-1/2  aspect-[4/3] object-cover"
               />

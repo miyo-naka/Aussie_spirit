@@ -2,7 +2,7 @@
 title: "カジュアルフライデー"
 date: "2025-08-12"
 category: ["aussie life"]
-tags: ["仕事", "オーストラリア"]
+tags: ["ブログ", "オーストラリア"]
 imgUrl: "/20250812_casualFriday/casualFriday.png"
 excerpt: "職場における“金曜日だけの特別な空気”"
 ---
