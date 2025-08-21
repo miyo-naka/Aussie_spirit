@@ -13,6 +13,10 @@ export const timeline = [
         link: "/blog/1_2",
       },
       {
+        title: "ケアンズとウルルの旅",
+        link: "/blog/1_3",
+      },
+      {
         title: "心に刻まれる都市、シドニー",
         link: "/blog/1_4",
       },
