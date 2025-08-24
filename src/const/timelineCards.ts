@@ -50,8 +50,8 @@ export const timeline = [
     image: "/img/beach3.jpg",
     link: [
       {
-        title: "準備中",
-        link: "/story",
+        title: "オージー気質が心地いい",
+        link: "/blog/4_1",
       },
     ],
   },
