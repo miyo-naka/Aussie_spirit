@@ -1,7 +1,7 @@
 ---
 title: "オーストラリアソング３選"
 date: "2025-08-19"
-category: ["aussie life"]
+category: "blog"
 tags: ["生活", "オーストラリア"]
 imgUrl: "/20250819_aussiesongs/aussie-songs.png"
 excerpt: "僕の好きなオーストラリアソング３選をご紹介します"

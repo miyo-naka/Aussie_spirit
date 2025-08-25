@@ -1,7 +1,7 @@
 ---
 title: "なぜブログを始めようと思ったか"
 date: "2025-08-17"
-category: ["aussie life"]
+category: "blog"
 tags: ["オーストラリア"]
 imgUrl: "/20250817_blogstart/blogstart.png"
 excerpt: "ブログを始めようと思うに至った経緯　その１"

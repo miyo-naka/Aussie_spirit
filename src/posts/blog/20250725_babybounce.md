@@ -1,7 +1,7 @@
 ---
 title: "図書館の Baby Bounce に通ってみた話"
 date: "2025-07-25"
-category: ["Family"]
+category: "blog"
 tags: ["子育て", "オーストラリア"]
 imgUrl: "/20250725_babybouce/babycloths.JPG"
 excerpt: "赤ちゃんとの時間を楽しむBaby bounce time"

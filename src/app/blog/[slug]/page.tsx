@@ -27,6 +27,21 @@ export default async function BlogPage(props: { params: Promise<Params> }) {
     return notFound();
   }
 
+  // カテゴリごとにリンク先と文言を分ける
+  let backLink = "/";
+  let backLabel = "ホームに戻る";
+
+  if (post.category === "blog") {
+    backLink = "/blog";
+    backLabel = "記事一覧に戻る";
+  } else if (post.category === "story") {
+    backLink = "/story";
+    backLabel = "Storyページに戻る";
+  } else if (post.category === "atfirst") {
+    backLink = "/aboutUs";
+    backLabel = "自己紹介ページに戻る";
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -57,10 +72,10 @@ export default async function BlogPage(props: { params: Promise<Params> }) {
             {post.content}
           </ReactMarkdown>
           <Link
-            href="/blog"
+            href={backLink}
             className="inline-block text-blue-500 my-8 hover:text-blue-700"
           >
-            記事一覧に戻る
+            {backLabel}
           </Link>
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
 title: "オーストラリアで家探し！インスペクションってどう行くの？"
 date: "2025-07-28"
-category: ["AussieLife", "Story"]
+category: "blog"
 tags: ["家", "オーストラリア"]
 imgUrl: "20250728_inspection/house.png"
 excerpt: "オーストラリアの賃貸内覧“インスペクション”って？日本との違いや当日の流れ、申し込みの注意点を体験ベースで紹介します。"

@@ -3,23 +3,14 @@ import { Header } from "@/components/header";
 import { getAllBlogs } from "@/utils/getAllBlogs";
 import Link from "next/link";
 
-type CategoryPageProps = {
-  params: Promise<{ category: string }>;
-};
-
-export default async function BlogPage({ params }: CategoryPageProps) {
-  // const { category } = await params;
-  // if (!categoryData[category]) {
-  //   return notFound();
-  // }
-
-  const posts = await getAllBlogs();
+export default async function BlogPage() {
+  const allPosts = await getAllBlogs();
+  const posts = allPosts.filter((p) => p.category === "blog");
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow mt-8">
-        {/* <Headline category={category} comment={categoryData[category]} /> */}
         <div className="mx-2 sm:mx-10 mb-10 grid grid-cols-auto-fill-280 gap-6">
           {posts.map((post) => (
             <div key={post.slug}>

@@ -53,7 +53,7 @@ export function Header() {
           ))} */}
           <li>
             <Link
-              href="/AboutUs"
+              href="/aboutUs"
               className="hover:text-yellow-400 transition duration-200"
             >
               About us
