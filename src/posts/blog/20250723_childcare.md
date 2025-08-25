@@ -1,7 +1,7 @@
 ---
 title: "チャイルドケア探しと補助金の話"
 date: "2025-07-23"
-category: "Family"
+category: "blog"
 tags: ["子育て", "オーストラリア"]
 imgUrl: "/20250723_childcare/auspicture.png"
 excerpt: "システム・見学・費用について"
