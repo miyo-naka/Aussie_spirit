@@ -86,6 +86,21 @@ export default function RootLayout({
             gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
           `}
         </Script>
+        {/* JSON-LD for Logo */}
+        <Script
+          id="ld-json-logo"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              url: siteUrl,
+              logo: `${siteUrl}/logo.png`,
+              name: "Aussie Spirit",
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#EAF1EB]`}
